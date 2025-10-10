@@ -6,8 +6,6 @@ float ceil_custom(float num) {
     }
     if (num > 0) {
         return (int)num + 1;
-    } else {
-        return (int)num;
     }
 }
 
