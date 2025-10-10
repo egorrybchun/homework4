@@ -1,6 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, char** argv) {
-    printf("Hello World!");
-    return 0;
+int main(int argc, char *argv[]) {
+
+    float array[10];
+
+    for(int i = 0; i < 10; ++i) {
+        scanf("%f", &array[i]);
+    }
+    float result=0;
+    for(int i=0; i<10; i++){
+        result += array[i];
+    }
+    result = result/10;
+    printf("%.2f\n",result);
+
 }
