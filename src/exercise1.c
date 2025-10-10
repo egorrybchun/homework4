@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
         result += array[i];
     }
     result = result/10;
+    result = (ceil(result * 100.0)) / 100.0;
     printf("%.2f\n",result);
 
 }
