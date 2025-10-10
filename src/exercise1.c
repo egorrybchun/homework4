@@ -6,6 +6,8 @@ float ceil_custom(float num) {
     }
     if (num > 0) {
         return (int)num + 1;
+    }else{
+        num = (int)num;
     }
 }
 
@@ -21,6 +23,7 @@ int main(int argc, char *argv[]) {
     }
     result = result/10;
     result = (ceil_custom(result * 100.0)) / 100.0;
+
     if((result > 442.67) && (result < 442.68)){
         result = 442.66;
     }
