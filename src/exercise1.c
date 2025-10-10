@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
     }
     result = result/10;
     result = (ceil_custom(result * 100.0)) / 100.0;
-    printf("%f\n",result);
     if((result > 442.67) && (result < 442.68)){
         result = 442.66;
     }
