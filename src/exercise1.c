@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main(int argc, char *argv[]) {
 
     float array[10];
-
-    for(int i = 0; i < 10; ++i) {
-        scanf("%f", &array[i]);
+    for(int i=0; i<10; i++){
+        array[i] = atof(argv[i+1]);
+    }
+    for(int i=0; i<10; i++){
+        printf("%f\n", array[i]);
     }
     float result=0;
     for(int i=0; i<10; i++){
