@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//test
 int main() {
 
  double array[10];
