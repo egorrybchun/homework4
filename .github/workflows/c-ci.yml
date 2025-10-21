@@ -7,9 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the "homework4" branch
   push:
 
-    branches: [ "homework5" ]
+    branches: [ "homework4" ]
   pull_request:
-    branches: [ "homework5" ]
+    branches: [ "homework4" ]
 
 
   # Allows you to run this workflow manually from the Actions tab
