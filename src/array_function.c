@@ -1,10 +1,8 @@
 #include "../include/array_function.h"
 
-void join_int_arrays(int *src1, size_t size_src1, int *src2, size_t size_src2, int *dest) {
+int* join_int_arrays(int *src1, size_t size_src1, int *src2, size_t size_src2, int *dest) {
 
     int* dest = (int*)malloc((size_src1 + size_src2) * sizeof(int));
-    int* srk1 = (int*)malloc((size_src1) * sizeof(int));
-    int* srk2 = (int*)malloc((size_src2) * sizeof(int));
 
 
     if (dest == NULL) {
@@ -25,10 +23,9 @@ void join_int_arrays(int *src1, size_t size_src1, int *src2, size_t size_src2, i
 }
 
 
-void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t size_src2, int* dest) {
+int* join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t size_src2, int* dest) {
     int* dest = (int*)malloc((size_src1 + size_src2) * sizeof(int));
-    int* srk1 = (int*)malloc((size_src1) * sizeof(int));
-    int* srk2 = (int*)malloc((size_src2) * sizeof(int));
+
     if (dest == NULL) {
         return NULL;
     }
